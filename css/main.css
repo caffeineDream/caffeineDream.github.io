@@ -1,0 +1,40 @@
+@import url(header&nav.css) screen;
+@import url(footer.css) screen;
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Oxygen", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.7;
+  color: gray;
+  background: #e8e8e8;
+  margin: 0;
+}
+h1, h2, h3, h4, h5, h6, figure {
+  color: #000;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+}
+a {
+  color: rgb(228,179,76);
+  transition: 0.5s;
+}
+a:hover, a:active, a:focus {
+  color: #66D37E;
+  outline: none;
+  text-decoration: none;
+}
+.container-wrap {
+  max-width: 1060px;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  background: #fff;
+}
+@media screen and (max-width: 768px) {
+  .container-wrap {
+    width: 100%;
+  }
+}
