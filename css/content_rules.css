@@ -1,15 +1,21 @@
-.about {
-    padding: 34px 30px;
-    background: rgb(255,255,255);
-    background: linear-gradient(160deg, rgba(255,255,255,1) 0%, rgba(193,197,200,1) 54%, rgba(94,94,94,1) 100%);
-    display: flex;
-    justify-content: center;
+.content-rules {
+  padding: 34px 30px;
 }
-@media screen and (max-width: 768px) {
-    .about {
-      padding: 3em 1em;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-  }
+.rules-header {
+  text-align: center;
+}
+.rules-header h2 {
+  font-weight: 700;
+}
+.rules-card {
+  margin-bottom: 1rem;
+}
+.rules-card h3 {
+  margin-bottom: 0.1rem;
+}
+.rules-card ul {
+  margin: 0;
+}
+.content-rules:last-child p {
+  font-weight: 600;
+}
