@@ -20,6 +20,11 @@
   width: 50%;
   margin: 1rem;
 }
+.address-block a.address-map {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
 .address-block .partners-header {
   display: inline;
 }
