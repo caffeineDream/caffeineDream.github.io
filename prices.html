@@ -38,9 +38,845 @@
             </div>
         </nav>
         <div class='container-wrap'>
-            <article style='height: 30vh;' class='prices'>
-                Hi, prices!
-            </article>
+            <div class='content-table'>
+                <button id='brusovPriceButton' class='button-price button-active' disabled>Брюсов</button>
+                <button id='povarPriceButton' class='button-price'>Поварская</button>
+                <table id='brusovPriceTable' class='table-prices'>
+                    <thead>
+                        <tr>
+                            <th rowspan='2'>Номер класса</th>
+                            <th rowspan='2'>Количество гостей/инструментов</th>
+                            <th colspan='2'>
+                                Стоимость ( 23:00 - 11:00)
+                                01-07 скидка 30%
+                            </th>
+                            <th colspan='2'>
+                                Стоимость ( 11:00 - 23:00)
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>Час</th>
+                            <th>Полчаса</th>
+                            <th>Час</th>
+                            <th>Полчаса</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                0
+                            </td>
+                            <td>
+                                1 – 2 чел.
+                            </td>
+                            <td>
+                                80
+                            </td>
+                            <td>
+                                40
+                            </td>
+                            <td>
+                                110
+                            </td>
+                            <td>
+                                60
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                I – IV
+                            </td>
+                            <td>
+                                1 – 4 чел.                            </td>
+                            <td>
+                                110
+                            </td>
+                            <td>
+                                60
+                            </td>
+                            <td>
+                                140
+                            </td>
+                            <td>
+                                75
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                V, VI, X
+                            </td>
+                            <td>
+                                1 – 4 чел.                            </td>
+                            <td>
+                                150
+                            </td>
+                            <td>
+                                80
+                            </td>
+                            <td>
+                                170
+                            </td>
+                            <td>
+                                100
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                VII – IX, XI, XII
+                            </td>
+                            <td>
+                                1 – 4 чел.                            </td>
+                            <td>
+                                170
+                            </td>
+                            <td>
+                                100
+                            </td>
+                            <td>
+                                230
+                            </td>
+                            <td>
+                                120
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                I – XII
+                            </td>
+                            <td>
+                                Трио – квартет                            </td>
+                            <td>
+                                300
+                            </td>
+                            <td>
+                                180
+                            </td>
+                            <td>
+                                300
+                            </td>
+                            <td>
+                                180
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                V – XII
+                            </td>
+                            <td>
+                                5 – 10 чел.                            </td>
+                            <td>
+                                400
+                            </td>
+                            <td>
+                                240
+                            </td>
+                            <td>
+                                400
+                            </td>
+                            <td>
+                                240
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Стальной
+                            </td>
+                            <td>
+                                2 фортепиано                           </td>
+                            <td>
+                                350
+                            </td>
+                            <td>
+                                180
+                            </td>
+                            <td>
+                                400
+                            </td>
+                            <td>
+                                240
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan='4'>
+                                Изумрудный/Стальной
+                            </td>
+                            <td>
+                                1 – 4 чел.                           </td>
+                            <td>
+                                270
+                            </td>
+                            <td>
+                                140
+                            </td>
+                            <td>
+                                330
+                            </td>
+                            <td>
+                                180
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Трио – квинтет                           </td>
+                            <td>
+                                400
+                            </td>
+                            <td>
+                                240
+                            </td>
+                            <td>
+                                400
+                            </td>
+                            <td>
+                                240
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                5 – 10 чел.                           </td>
+                            <td>
+                                450
+                            </td>
+                            <td>
+                                260
+                            </td>
+                            <td>
+                                450
+                            </td>
+                            <td>
+                                260
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                11 и более чел.                           </td>
+                            <td>
+                                550
+                            </td>
+                            <td>
+                                280
+                            </td>
+                            <td>
+                                550
+                            </td>
+                            <td>
+                                280
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan='6'>
+                                Зал
+                            </td>
+                            <td>
+                                1 – 4 чел.                           
+                            </td>
+                            <td>
+                                350
+                            </td>
+                            <td>
+                                180
+                            </td>
+                            <td>
+                                450
+                            </td>
+                            <td>
+                                240
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Трио – квинтет                           
+                            </td>
+                            <td>
+                                500
+                            </td>
+                            <td>
+                                260
+                            </td>
+                            <td>
+                                500
+                            </td>
+                            <td>
+                                260
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                5 – 10 чел.                           
+                            </td>
+                            <td>
+                                600
+                            </td>
+                            <td>
+                                360
+                            </td>
+                            <td>
+                                600
+                            </td>
+                            <td>
+                                360
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                11 и более чел.                           
+                            </td>
+                            <td>
+                                900
+                            </td>
+                            <td>
+                                500
+                            </td>
+                            <td>
+                                900
+                            </td>
+                            <td>
+                                500
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Концерт
+                                (организованное мероприятие)                           
+                            </td>
+                            <td>
+                                4000 *(два часа)
+                            </td>
+                            <td>
+                                1000
+                            </td>
+                            <td>
+                                4000 *(два часа)
+                            </td>
+                            <td>
+                                1000
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                2 рояля                          
+                            </td>
+                            <td>
+                                450
+                            </td>
+                            <td>
+                                260
+                            </td>
+                            <td>
+                                600
+                            </td>
+                            <td>
+                                360
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table id='povarPriceTable' class='table-prices display-none'>
+                    <thead>
+                        <tr>
+                            <th rowspan='2'>Номер класса</th>
+                            <th rowspan='2'>Количество гостей/инструментов</th>
+                            <th colspan='2'>
+                                Стоимость ( 23:00 - 11:00)
+                                01-07 скидка 30%
+                            </th>
+                            <th colspan='2'>
+                                Стоимость ( 11:00 - 23:00)
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>Час</th>
+                            <th>Полчаса</th>
+                            <th>Час</th>
+                            <th>Полчаса</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                0
+                            </td>
+                            <td>
+                                1 – 2 чел.
+                            </td>
+                            <td>
+                                80
+                            </td>
+                            <td>
+                                40
+                            </td>
+                            <td>
+                                110
+                            </td>
+                            <td>
+                                60
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                II – IV
+                            </td>
+                            <td>
+                                1 – 4 чел.
+                            </td>
+                            <td>
+                                110
+                            </td>
+                            <td>
+                                60
+                            </td>
+                            <td>
+                                140
+                            </td>
+                            <td>
+                                75
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                V – VII
+                            </td>
+                            <td>
+                                1 – 4 чел.
+                            </td>
+                            <td>
+                                150
+                            </td>
+                            <td>
+                                80
+                            </td>
+                            <td>
+                                170
+                            </td>
+                            <td>
+                                100
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                VIII – XI
+                            </td>
+                            <td>
+                                1 – 4 чел.
+                            </td>
+                            <td>
+                                170
+                            </td>
+                            <td>
+                                100
+                            </td>
+                            <td>
+                                230
+                            </td>
+                            <td>
+                                120
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Рубин/Аметист
+                            </td>
+                            <td>
+                                1 – 4 чел.
+                            </td>
+                            <td>
+                                200
+                            </td>
+                            <td>
+                                120
+                            </td>
+                            <td>
+                                250
+                            </td>
+                            <td>
+                                135
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan='2'>
+                                V – XI/Рубин/Аметист
+                            </td>
+                            <td>
+                                5 – 10 чел.
+                            </td>
+                            <td>
+                                400
+                            </td>
+                            <td>
+                                240
+                            </td>
+                            <td>
+                                400
+                            </td>
+                            <td>
+                                240
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Трио – квартет
+                            </td>
+                            <td>
+                                300
+                            </td>
+                            <td>
+                                180
+                            </td>
+                            <td>
+                                300
+                            </td>
+                            <td>
+                                180
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Алмаз
+                            </td>
+                            <td>
+                                1 – 4 чел.
+                            </td>
+                            <td>
+                                290
+                            </td>
+                            <td>
+                                160
+                            </td>
+                            <td>
+                                350
+                            </td>
+                            <td>
+                                180
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Красный
+                            </td>
+                            <td>
+                                2 фортепиано
+                            </td>
+                            <td>
+                                300
+                            </td>
+                            <td>
+                                180
+                            </td>
+                            <td>
+                                350
+                            </td>
+                            <td>
+                                200
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Красный/Зелёный
+                            </td>
+                            <td>
+                                1 – 4 чел.
+                            </td>
+                            <td>
+                                270
+                            </td>
+                            <td>
+                                140
+                            </td>
+                            <td>
+                                330
+                            </td>
+                            <td>
+                                180
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan='3'>
+                                Красный/Зелёный/Алмаз
+                            </td>
+                            <td>
+                                Трио – квартет
+                            </td>
+                            <td>
+                                400
+                            </td>
+                            <td>
+                                240
+                            </td>
+                            <td>
+                                400
+                            </td>
+                            <td>
+                                240
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                5 – 10 чел.
+                            </td>
+                            <td>
+                                450
+                            </td>
+                            <td>
+                                260
+                            </td>
+                            <td>
+                                450
+                            </td>
+                            <td>
+                                260
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                11 и более чел.
+                            </td>
+                            <td>
+                                550
+                            </td>
+                            <td>
+                                280
+                            </td>
+                            <td>
+                                550
+                            </td>
+                            <td>
+                                280
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan='5'>
+                                Белый зал
+                            </td>
+                            <td>
+                                1 – 4 чел.
+                            </td>
+                            <td>
+                                300
+                            </td>
+                            <td>
+                                180
+                            </td>
+                            <td>
+                                400
+                            </td>
+                            <td>
+                                240
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Трио-квартет
+                            </td>
+                            <td>
+                                500
+                            </td>
+                            <td>
+                                260
+                            </td>
+                            <td>
+                                500
+                            </td>
+                            <td>
+                                260
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                5 – 10 чел.
+                            </td>
+                            <td>
+                                600
+                            </td>
+                            <td>
+                                360
+                            </td>
+                            <td>
+                                600
+                            </td>
+                            <td>
+                                360
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                11 и более чел.
+                            </td>
+                            <td>
+                                900
+                            </td>
+                            <td>
+                                500
+                            </td>
+                            <td>
+                                900
+                            </td>
+                            <td>
+                                500
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Концерт
+                                (организованное мероприятие)
+                            </td>
+                            <td>
+                                3500 *(два часа)
+                            </td>
+                            <td>
+                                1750 *(доп. час)
+                            </td>
+                            <td>
+                                3500 *(два часа)
+                            </td>
+                            <td>
+                                1750 *(доп. час)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan='6'>
+                                Большой камерный зал
+                            </td>
+                            <td>
+                                1 – 4 чел.
+                            </td>
+                            <td>
+                                400
+                            </td>
+                            <td>
+                                240
+                            </td>
+                            <td>
+                                500
+                            </td>
+                            <td>
+                                260
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Трио-квартет
+                            </td>
+                            <td>
+                                550
+                            </td>
+                            <td>
+                                280
+                            </td>
+                            <td>
+                                550
+                            </td>
+                            <td>
+                                280
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                5 – 10 чел.
+                            </td>
+                            <td>
+                                650
+                            </td>
+                            <td>
+                                380
+                            </td>
+                            <td>
+                                650
+                            </td>
+                            <td>
+                                380
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                11 и более чел.
+                            </td>
+                            <td>
+                                950
+                            </td>
+                            <td>
+                                530
+                            </td>
+                            <td>
+                                950
+                            </td>
+                            <td>
+                                530
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Концерт
+                                (организованное мероприятие)
+                            </td>
+                            <td>
+                                4500 *(два часа)
+                            </td>
+                            <td>
+                                2250 *(доп. час)
+                            </td>
+                            <td>
+                                4500 *(два часа)
+                            </td>
+                            <td>
+                                2250 *(доп. час)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                2 рояля
+                            </td>
+                            <td>
+                                450
+                            </td>
+                            <td>
+                                260
+                            </td>
+                            <td>
+                                600
+                            </td>
+                            <td>
+                                350
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class='container-wrap'>
+            <div class='content-table'>
+                <h3 class='table-header'>Сертификаты</h3>
+                <p>
+                    У Вас есть возможность приобрести сертификат со скидкой, что позволит не только сэкономить деньги,
+                    но и не тратить время на оплату каждого визита.
+                    Это очень удобно и выгодно. Сертификат действует 30 дней.
+                </p>
+                <table class='table-prices'>
+                    <thead>
+                        <tr>
+                            <th>Номинал</th>
+                            <th>Скидка при оплате наличными</th>
+                            <th>Скидка при оплате картой</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>3000 – 8000</td>
+                            <td>5%</td>
+                            <td>0%</td>
+                        </tr>
+                        <tr>
+                            <td>10000 – 30000</td>
+                            <td>10%</td>
+                            <td>5%</td>
+                        </tr>
+                        <tr>
+                            <td>35000</td>
+                            <td>15%</td>
+                            <td>10%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
         <div class='container-wrap'>
             <footer class='main-footer' role='contentinfo'>
