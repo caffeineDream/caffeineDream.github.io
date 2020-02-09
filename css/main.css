@@ -39,8 +39,7 @@ a:hover, a:active, a:focus {
 .about {
   padding: 34px 30px;
   background: rgb(255,255,255);
-  background: linear-gradient(160deg, rgba(255,255,255,1) 0%, rgba(193,197,200,1) 54%, rgba(94,94,94,1) 100%);
-  display: flex;
+  background: linear-gradient(160deg, rgba(255,255,255,1) 0%, rgba(200,209,215,1) 87%, rgba(251,249,249,1) 100%); 
   justify-content: center;
 }
 @media screen and (max-width: 768px) {

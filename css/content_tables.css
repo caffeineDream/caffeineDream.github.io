@@ -1,0 +1,40 @@
+.content-table {
+    padding: 2rem 30px 1rem 30px;
+}
+@media screen and (max-width: 768px) {
+    .content-table {
+      padding: 1rem 1rem;
+    }
+    .table-prices {
+        width: 100%;
+    }
+}
+.content-table h3 {
+    text-align: center;
+}
+.table-prices {
+    min-width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    border: 1px solid #c8d1d7;
+}
+.table-prices tr {
+    border-bottom: 1px solid #c8d1d7;
+}
+.table-prices th {
+    text-align: left;
+    padding: 0.75rem;
+}
+.table-prices td {
+    padding: 0.75rem;
+}
+.table-prices td[colspan='2'] {
+    text-align: center;
+}
+.table-prices tbody tr:hover {
+    background-color: rgb(228,179,76);
+    color: white;
+}
+.table-prices thead tr {
+    background-color: #eef1f2;
+}
