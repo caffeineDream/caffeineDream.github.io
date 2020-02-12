@@ -60,6 +60,7 @@
     padding: 0.75rem;
 }
 .table-prices td {
+    max-width: 3rem;
     padding: 0.75rem;
 }
 .table-prices td[colspan='2'] {

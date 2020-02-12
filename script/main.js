@@ -14,25 +14,19 @@ menu.addEventListener('click', () => {
     }
 });
 
-const brusovButton = document.getElementById('brusovPriceButton');
-const povarButton = document.getElementById('povarPriceButton');
-const brusovPriceTable = document.getElementById('brusovPriceTable');
-const povarPriceTable = document.getElementById('povarPriceTable');
 
+var shownContent = 'brusovContent';
+var tabButtons = document.getElementsByClassName('tab-button');
+var swapContent = function () {
+    document.getElementById(shownContent).classList.add('display-none');
+    document.getElementById(this.value).classList.remove('display-none');
+    document.querySelector('button:disabled').classList.remove('button-active');
+    document.querySelector('button:disabled').removeAttribute('disabled');
+    this.classList.add('button-active');
+    this.setAttribute('disabled', 'disabled');
+    shownContent = this.value;
+};
 
-povarButton.addEventListener('click', () => {
-    brusovButton.classList.remove('button-active');
-    brusovButton.removeAttribute('disabled');
-    brusovPriceTable.classList.add('display-none');
-    povarButton.classList.add('button-active');
-    povarButton.setAttribute("disabled", "disabled");
-    povarPriceTable.classList.remove('display-none');
-});
-brusovButton.addEventListener('click', () => {
-    povarButton.classList.remove('button-active');
-    povarButton.removeAttribute('disabled');
-    povarPriceTable.classList.add('display-none');
-    brusovButton.classList.add('button-active');
-    brusovButton.setAttribute("disabled", "disabled");
-    brusovPriceTable.classList.remove('display-none');
-});
+for (var i = 0; i < tabButtons.length; i++) {
+    tabButtons[i].addEventListener('click', swapContent, false);
+}
