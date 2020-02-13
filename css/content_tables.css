@@ -70,6 +70,10 @@
     background-color: rgb(228,179,76);
     color: white;
 }
+.table-prices tbody tr:hover td.row-head {
+    background-color: #fff;
+    color: gray;
+}
 .table-prices thead tr {
     background-color: #eef1f2;
 }
