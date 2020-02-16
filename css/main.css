@@ -375,3 +375,39 @@ transition-duration: 0.25s;
 .social-icons li a i {
   font-size: 20px;
 }
+/* Tab buttons  */
+.tab-button {
+    display: inline-block;
+    border: 1px solid #c8d1d7;
+    padding: 1rem 1rem;
+    margin: 0;
+    text-decoration: none;
+    background: white;
+    color: gray;
+    font-family: sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+.tab-button:hover {
+    border: 1px solid rgb(228,179,76);
+}
+.tab-button:focus {
+    outline: none;
+}
+.tab-button:active {
+    transform: scale(0.95);
+}
+.tab-button.button-active {
+    border: 2px solid rgb(228,179,76);
+}
+.display-none {
+  display: none;
+}
+.display-flex {
+  display: flex;
+}

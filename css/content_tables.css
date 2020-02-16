@@ -9,41 +9,8 @@
         width: 100%;
     }
 }
-.content-table .table-prices.display-none {
-    display: none;
-}
 .content-table h3 {
     text-align: center;
-}
-.content-table .button-price {
-    display: inline-block;
-    border: 1px solid #c8d1d7;
-    padding: 1rem 1rem;
-    margin: 0;
-    text-decoration: none;
-    background: white;
-    color: gray;
-    font-family: sans-serif;
-    font-size: 1rem;
-    cursor: pointer;
-    text-align: center;
-    transition: background 250ms ease-in-out, 
-                transform 150ms ease;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-}
-.content-table .button-price:hover {
-    border: 1px solid rgb(228,179,76);
-}
-.content-table .button-price:focus {
-    outline: none;
-}
-.content-table .button-price:active {
-    transform: scale(0.95);
-}
-.content-table .button-price.button-active {
-    border: 2px solid rgb(228,179,76);
-    
 }
 .table-prices {
     margin-top: 1rem;

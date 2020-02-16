@@ -1,0 +1,23 @@
+.content-gallery {
+    padding: 34px 30px;
+}
+@media screen and (max-width: 768px) {
+    .content-gallery {
+
+    }
+}
+.gallery-wrapper {
+}
+.gallery-card {
+    box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.12);
+    border: 1px solid #e0e0e0;
+    padding: 1rem;
+    margin: 1rem 0;
+    justify-content: space-around;
+}
+.gallery-card img {
+    height: 300px;
+}
+.gallery-card .card-dscr {
+    height: 300px;
+}
