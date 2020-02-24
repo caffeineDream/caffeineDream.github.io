@@ -64,12 +64,10 @@
     height: 100%;
 }
 .arrow-left {
-    background-color: rgba(171, 183, 183, 0.3);
     left: 0px;
     top: 60%;
 }
 .arrow-right {
-    background-color: rgba(81, 206, 92, 0.3);
     right: 0px;
     top: 60%;
 }
