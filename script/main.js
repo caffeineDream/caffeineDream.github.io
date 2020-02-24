@@ -1,7 +1,7 @@
+// Navbar menu
 var open = false;
 const menu = document.getElementById('nav-sandwich');
 const navList = document.getElementById('nav-list');
-
 menu.addEventListener('click', () => {
     if (!open) {
         menu.classList.add('open');
@@ -13,15 +13,13 @@ menu.addEventListener('click', () => {
         open = false;
     }
 });
-
-// Tab buttons
+// Tab and page buttons
 var shownContent = 'brusovContent';
 var shownCardBrusov = 'zalCardBrusov';
 var shownCardPovar = 'zalCardPovar';
 var tabButtons = document.getElementsByClassName('tab-button');
 var galleryButtonsBrusov = document.getElementsByClassName('gallery-button-brusov');
 var galleryButtonsPovar = document.getElementsByClassName('gallery-button-povar');
-
 var swapContent = function() {
     document.getElementById(shownContent).classList.add('display-none');
     document.getElementById(this.value).classList.remove('display-none');
@@ -37,31 +35,53 @@ var swapContent = function() {
     };
 
 };
-var swapCardsBrusov = function() {
-    document.getElementById(shownCardBrusov).classList.remove('display-flex');
-    document.getElementById(shownCardBrusov).classList.add('display-none');
-    document.querySelector('.gallery-button-brusov[value=' + CSS.escape(shownCardBrusov) + ']').removeAttribute('disabled');
-    document.querySelector('.gallery-button-brusov[value=' + CSS.escape(this.value) + ']').setAttribute('disabled', 'disabled');
-    document.getElementById(this.value).classList.remove('display-none');
-    document.getElementById(this.value).classList.add('display-flex');
-    shownCardBrusov = this.value;
+var swapCards = function(galleryMarker, subjectButton) {
+    document.getElementById(galleryMarker).classList.remove('display-flex');
+    document.getElementById(galleryMarker).classList.add('display-none');
+    document.querySelector('[value=' + CSS.escape(galleryMarker) + ']').removeAttribute('disabled');
+    document.querySelector('[value=' + CSS.escape(subjectButton.value) + ']').setAttribute('disabled', 'disabled');
+    document.querySelector('[value=' + CSS.escape(galleryMarker) + ']').classList.remove('current-button');
+    document.querySelector('[value=' + CSS.escape(subjectButton.value) + ']').classList.add('current-button')
+    document.getElementById(subjectButton.value).classList.remove('display-none');
+    document.getElementById(subjectButton.value).classList.add('display-flex');
+    if (subjectButton.classList.contains('gallery-button-brusov')) {
+        shownCardBrusov = subjectButton.value;
+    } else if (subjectButton.classList.contains('gallery-button-povar')) {
+        shownCardPovar = subjectButton.value;
+    };
 };
-var swapCardsPovar = function() {
-    document.getElementById(shownCardPovar).classList.remove('display-flex');
-    document.getElementById(shownCardPovar).classList.add('display-none');
-    document.querySelector('.gallery-button-povar[value=' + CSS.escape(shownCardPovar) + ']').removeAttribute('disabled');
-    document.querySelector('.gallery-button-povar[value=' + CSS.escape(this.value) + ']').setAttribute('disabled', 'disabled');
-    document.getElementById(this.value).classList.remove('display-none');
-    document.getElementById(this.value).classList.add('display-flex');
-    shownCardPovar = this.value;
-};
-
 for (var i = 0; i < tabButtons.length; i++) {
     tabButtons[i].addEventListener('click', swapContent, false);
 };
 for (var i = 0; i < galleryButtonsBrusov.length; i++) {
-    galleryButtonsBrusov[i].addEventListener('click', swapCardsBrusov, false)
+    galleryButtonsBrusov[i].addEventListener('click', function() {
+        swapCards(shownCardBrusov, this);
+    }, false);
 };
 for (var i = 0; i < galleryButtonsPovar.length; i++) {
-    galleryButtonsPovar[i].addEventListener('click', swapCardsPovar, false)
+    galleryButtonsPovar[i].addEventListener('click', function() {
+        swapCards(shownCardPovar, this);
+    }, false);
 };
+// Arrow buttons for mobile
+var brusovCards = document.querySelectorAll('#brusovContent .gallery-card');
+var povarCards = document.querySelectorAll('#povarContent .gallery-card');
+var arrowButtons = document.getElementsByClassName('arrow-button');
+
+function arrowClick(currentCardsArray, direction ) {
+    console.log(currentCardsArray, direction);
+}
+
+for (var i = 0; i < arrowButtons.length; i++) {
+    arrowButtons[i].addEventListener('click', function() {
+        if (this.classList.contains('arrow-brusov') && this.classList.contains('arrow-left')) {
+            arrowClick(brusovCards, 'left');
+        } else if (this.classList.contains('arrow-brusov') && this.classList.contains('arrow-right')) {
+            arrowClick(brusovCards, 'right');
+        } else if (this.classList.contains('arrow-povar') && this.classList.contains('arrow-left')) {
+            arrowClick(povarCards, 'left');
+        } else if (this.classList.contains('arrow-povar') && this.classList.contains('arrow-right')) {
+            arrowClick(povarCards, 'right');
+        };
+    }, false);
+}

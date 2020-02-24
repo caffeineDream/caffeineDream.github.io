@@ -410,4 +410,5 @@ transition-duration: 0.25s;
 }
 .display-flex {
   display: flex;
+  flex-direction: column;
 }
