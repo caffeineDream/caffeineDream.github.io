@@ -67,21 +67,42 @@ for (var i = 0; i < galleryButtonsPovar.length; i++) {
 var brusovCards = document.querySelectorAll('#brusovContent .gallery-card');
 var povarCards = document.querySelectorAll('#povarContent .gallery-card');
 var arrowButtons = document.getElementsByClassName('arrow-button');
-
-function arrowClick(currentCardsArray, direction ) {
-    console.log(currentCardsArray, direction);
-}
-
+var brusovIndex = 0;
+var povarIndex = 0;
+function arrowClick(currentCardsArray, index, direction ) {
+    var maxIndex;
+    var currentGallery = currentCardsArray[index].parentElement.id
+    if (currentGallery  == 'brusovContent') {
+        maxIndex = brusovCards.length-1;
+    } else (maxIndex = povarCards.length-1);
+    if (direction == 'right' && index < maxIndex) {
+        currentCardsArray[index].classList.remove('display-flex');
+        currentCardsArray[index].classList.add('display-none');
+        currentCardsArray[index+1].classList.remove('display-none');
+        currentCardsArray[index+1].classList.add('display-flex');
+        if (currentGallery == 'brusovContent') {
+            brusovIndex++;
+        } else { povarIndex++ };
+    } else if (direction == 'left' && index !== 0) {
+        currentCardsArray[index].classList.remove('display-flex');
+        currentCardsArray[index].classList.add('display-none');
+        currentCardsArray[index-1].classList.remove('display-none');
+        currentCardsArray[index-1].classList.add('display-flex');
+        if (currentGallery == 'brusovContent') {
+            brusovIndex--;
+        } else { povarIndex-- };
+    };
+};
 for (var i = 0; i < arrowButtons.length; i++) {
     arrowButtons[i].addEventListener('click', function() {
         if (this.classList.contains('arrow-brusov') && this.classList.contains('arrow-left')) {
-            arrowClick(brusovCards, 'left');
+            arrowClick(brusovCards, brusovIndex, 'left');
         } else if (this.classList.contains('arrow-brusov') && this.classList.contains('arrow-right')) {
-            arrowClick(brusovCards, 'right');
+            arrowClick(brusovCards, brusovIndex, 'right');
         } else if (this.classList.contains('arrow-povar') && this.classList.contains('arrow-left')) {
-            arrowClick(povarCards, 'left');
+            arrowClick(povarCards, povarIndex, 'left');
         } else if (this.classList.contains('arrow-povar') && this.classList.contains('arrow-right')) {
-            arrowClick(povarCards, 'right');
+            arrowClick(povarCards, povarIndex, 'right');
         };
     }, false);
-}
+};
