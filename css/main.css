@@ -36,18 +36,16 @@ a:hover, a:active, a:focus {
     width: 100%;
   }
 }
-.about {
-  padding: 34px 30px;
-  background: rgb(255,255,255);
-  background: linear-gradient(160deg, rgba(255,255,255,1) 0%, rgba(200,209,215,1) 87%, rgba(251,249,249,1) 100%); 
-  justify-content: center;
+.mobile-page-header {
+  display: none;
+  margin: 0;
+  font-weight: 550;
+  width: 100%;
+  text-align: center;
 }
 @media screen and (max-width: 768px) {
-  .about {
-    padding: 3em 1em;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .mobile-page-header {
+    display: block;
   }
 }
 /* HEADER&NAV */
@@ -70,9 +68,9 @@ a:hover, a:active, a:focus {
   flex-wrap: wrap;
 }
 @media screen and (max-width: 768px) {
-.main-nav .top-menu {
-  padding: 15px 1em;
-}
+  .main-nav .top-menu {
+    padding: 15px 1em;
+  }
 }
 /* .main-nav #main-logo {
   font-size: 24px;
@@ -95,6 +93,22 @@ a:hover, a:active, a:focus {
 }
 .main-nav #main-logo a:hover {
   color: #000;
+}
+.main-nav .nav-phone {
+  display: none;
+  color: #000;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin: 0 0 0 1.25em;
+}
+@media screen and (max-width: 768px) {
+  .main-nav .nav-phone {
+    display: block;
+  }
+}
+.nav-phone-holder {
+  min-width: 15%;
 }
 .main-nav a {
   padding: 5px 10px;
@@ -180,8 +194,14 @@ a:hover, a:active, a:focus {
   }
   .top-menu ul.open {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap-reverse;
+      margin: auto;
   }
+  .top-menu ul.open li {
+    margin: 0.15rem 0;
+}
   #nav-list.open li a{
       padding: 10px 12px;
   }
@@ -272,7 +292,7 @@ transition-duration: 0.25s;
 /* FOOTER */
 .main-footer {
   padding: 3em 2em 1em 2em;
-  margin-top: 50px !important;
+  margin-top: 1em !important;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -380,7 +400,7 @@ transition-duration: 0.25s;
     display: inline-block;
     border: 1px solid #c8d1d7;
     padding: 1rem 1rem;
-    margin: 0;
+    margin: 0.5rem 0 0 0;
     text-decoration: none;
     background: white;
     color: gray;

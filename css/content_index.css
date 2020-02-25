@@ -1,3 +1,24 @@
+.about {
+    padding: 34px 30px;
+    background: rgb(248,250,250);
+    background: linear-gradient(160deg, rgba(248,250,250,1) 7%, rgba(228,179,76,0.3956933115042892) 100%);
+    text-indent: 0.5rem;
+}
+@media screen and (max-width: 768px) {
+    .about {
+      padding: 1em;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .about p {
+        display: none;
+        margin-top: 0;
+    }
+    .about p:first-child{
+        display: block;
+    }
+}
 .content-gallery {
     padding: 34px 30px;
 }

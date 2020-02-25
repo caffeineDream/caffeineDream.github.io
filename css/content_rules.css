@@ -1,6 +1,11 @@
 .content-rules {
   padding: 34px 30px;
 }
+@media screen and (max-width: 768px) {
+  .content-rules {
+    padding: 1em;
+  }
+}
 .rules-header {
   text-align: center;
 }
