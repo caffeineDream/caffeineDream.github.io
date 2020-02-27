@@ -1,55 +1,73 @@
 .content-map {
-    padding: 34px 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  padding: 34px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .content-map #map {
-  max-width: 70%;
-  height: auto;
+max-width: 70%;
+height: auto;
 }
 .content-map .blocks-wrapper {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 1rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+margin-bottom: 1rem;
+padding-bottom: 0.5rem;
+border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 .address-block {
-  width: 50%;
-  margin: 1rem;
+width: 50%;
+margin: 1rem;
 }
 .address-block a.address-map {
-  display: inline-block;
-  margin-bottom: 0.5rem;
-  font-weight: 600;
+display: inline-block;
+margin-bottom: 0.5rem;
+font-weight: 600;
 }
 .address-block .partners-header {
-  display: inline;
+display: inline;
 }
 .content-map h3 {
-  margin-bottom: 0.5rem;
+margin-bottom: 0.5rem;
 }
 .content-map p {
-  margin: 0;
+margin: 0;
 }
 @media screen and (max-width: 768px) {
-  .content-map {
-    padding: 1em;
-  }
-  .content-map #map {
-    max-width: 100%;
-  }
-  .content-map .blocks-wrapper {
-    flex-direction: column;
-    justify-content: stretch;
-  }
-  .address-block{
-    width: auto;
-    margin: 0.25rem;
-  }
-  .address-block .partners-header {
-    display: inline-block;
-  }
+.content-map {
+  padding: 1em;
+}
+.content-map #map {
+  max-width: 100%;
+}
+.content-map .blocks-wrapper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+}
+.address-block{
+  width: auto;
+  margin: 0.25rem;
+}
+.address-block .partners-header {
+  display: inline-block;
+}
 }
