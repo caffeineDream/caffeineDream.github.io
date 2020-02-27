@@ -80,14 +80,15 @@ a:hover, a:active, a:focus {
   font-weight: 600;
   font-family: "Source Sans Pro", sans-serif;
 } */
-#main-logo {
+.main-nav div.main-logo-holder {
+  display: inline;
   max-width: 10%;
-  height: auto;
-  margin: 0;
-  display: inline-block;
+}
+#main-logo {
+  max-width: 100%;
 }
 @media screen and (max-width: 768px) {
-  #main-logo {
+  .main-nav div.main-logo-holder {
     max-width: 15%;
   }
 }
@@ -100,15 +101,21 @@ a:hover, a:active, a:focus {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1.25rem;
   font-weight: 400;
-  margin: 0 0 0 1.25em;
+  margin: 0 0 0 0;
+}
+.nav-phone-holder {
+  min-width: 10%;
+  height: auto;
+  margin: 0;
+  display: block;
+}
+.main-nav .nav-phone a {
+  padding: 0;
 }
 @media screen and (max-width: 768px) {
   .main-nav .nav-phone {
     display: block;
   }
-}
-.nav-phone-holder {
-  min-width: 15%;
 }
 .main-nav a {
   padding: 5px 10px;
@@ -194,7 +201,7 @@ a:hover, a:active, a:focus {
   }
   .top-menu ul.open {
       display: flex;
-      flex-direction: row;
+      flex-direction: row-reverse;
       justify-content: space-between;
       flex-wrap: wrap-reverse;
       margin: auto;
