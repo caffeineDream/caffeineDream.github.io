@@ -77,3 +77,10 @@
 .table-prices thead tr {
     background-color: #eef1f2;
 }
+@media screen and (max-width: 768px) {
+    .table-main th, .table-main td {
+        padding: 0.4rem;
+        font-size: 0.6rem;
+        word-wrap: break-word;
+    }
+}
