@@ -16,7 +16,7 @@ menu.addEventListener('click', () => {
 // Tab and page buttons
 var shownContent = 'brusovContent';
 var shownCardBrusov = 'zalCardBrusov';
-var shownCardBrusov2 = '1CardBrusov2';
+var shownCardBrusov2 = 'mirrorCardBrusov2';
 var shownCardPovar = 'zalCardPovar';
 var tabButtons = document.getElementsByClassName('tab-button');
 var galleryButtonsBrusov = document.getElementsByClassName('gallery-button-brusov');
