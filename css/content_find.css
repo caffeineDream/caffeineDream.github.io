@@ -15,8 +15,8 @@
           align-items: center;
 }
 .content-map #map {
-max-width: 70%;
-height: auto;
+  max-width: 70%;
+  height: auto; 
 }
 .content-map .blocks-wrapper {
 display: -webkit-box;
