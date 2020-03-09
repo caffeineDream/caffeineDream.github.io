@@ -134,13 +134,4 @@ for (var i = 0; i < arrowButtons.length; i++) {
         }
     }, false);
 };
-//YCLIENTS
-if(screen.width > 768){
-    var d = document,
-                h = d.getElementsByTagName('head')[0],
-                s = d.createElement('script');
-        s.type = 'text/javascript';
-        s.async = true;
-        s.src = 'https://w163948.yclients.com/widgetJS';
-        h.appendChild(s);
-};
+

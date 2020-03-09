@@ -528,6 +528,9 @@ content: "";
 .tab-button.button-active {
     border: 2px solid rgb(228,179,76);
 }
+.tab-button small {
+  font-size: 0.6rem;
+}
 .display-none {
   display: none;
 }
