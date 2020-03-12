@@ -65,6 +65,13 @@
     margin: 0.25rem 0;
     text-indent: 0.5rem;
 }
+.gallery-card .card-dscr p.equipment-p {
+    margin: 0.25rem 0;
+    text-indent: 0;
+}
+.gallery-card .card-dscr h3.equipment-h3 {
+    margin: 0;
+}
 .button-holder {
     margin-top: 0.5rem;
 }
