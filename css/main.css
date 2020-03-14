@@ -227,23 +227,15 @@ a:hover, a:active, a:focus {
       display: none;
   }
   .top-menu ul.open {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: reverse;
-          -ms-flex-direction: row-reverse;
-              flex-direction: row-reverse;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      -ms-flex-wrap: wrap-reverse;
-          flex-wrap: wrap-reverse;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
       margin: auto;
   }
   .top-menu ul.open li {
     margin: 0.15rem 0;
-}
+  }
   #nav-list.open li a{
       padding: 10px 12px;
   }
