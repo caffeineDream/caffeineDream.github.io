@@ -26,18 +26,21 @@
             <div class='container-wrap'>
                 <div class='top-menu'>
                     <div class='main-logo-holder'><a href="index.html" class="logo-link"><img id='main-logo' alt='logo' src='img/logo.png'> </a></div>
-                    <h2 class='nav-phone'><a href="tel:+7-999-975-4529">+7 (999) 975-45-29</a></h2>
-                    <div class='nav-phone-holder'></div>
+                    <div  id='mobile-yclients-target' class="mobile-booking">
+                        <!-- <a class='mobile-yclients ms_booking'>Онлайн-запись</button> -->
+                    </div>
+                    <div class='nav-spaceholder'></div>
                     <div id='nav-sandwich'>
                         <span class='baseline'></span>
                     </div>
 					<ul id='nav-list'>
-						<li><a href='index.html'>О нас</a></li>
+						<li class='active'><a href='index.html'>О нас</a></li>
                         <li><a href='prices.html'>Цены</a></li>
                         <li><a href='other_services.html'>Услуги</a></li>
-						<li class='active'><a href='rules.html'>Правила</a></li>
+						<li><a href='rules.html'>Правила</a></li>
                         <li><a href='how_to_find.html'>Как найти</a></li>
                         <li><a href='partners.html'>Партнеры</a></li>
+                        <!-- <a class='desktop-yclients ms_booking'>Онлайн-запись</a> -->
 					</ul>
                 </div>
             </div>
@@ -52,10 +55,10 @@
                             Клиент имеет право забронировать время в репетитории на любое количество дней вперёд в пределах одного календарного месяца.
                         </li>
                         <li>
-                            Бронь осуществляется по телефону <strong>+7 (999) 975-45-29</strong>  или при личном визите в репетиторий.
+                            Бронь осуществляется по телефону <strong><a href="tel:+7-999-975-4529">+7 (999) 975-45-29</a></strong>, в WhatsApp, <a href='https://n163948.yclients.com/  '>онлайн</a> или при личном визите в репетиторий.
                         </li>
                         <li>
-                            Отменить бронирование можно не позднее, чем за 3 часа до назначенного времени.
+                            Отменить бронирование можно не позднее, чем за 3 часа до назначенного времени по телефону, WhatsApp или онлайн.
                         </li>
                         <li>
                             Если клиент не отменяет бронирование заранее, администрация оставляет за собой право списать в следующий визит стоимость всего бронирования, при продолжительности запланированного занятия менее часа и стоимость часа,
@@ -87,11 +90,11 @@
                     <ul>
                         <li>
                             Оплата производится непосредственно после окончания занятия.
-                            Исключением является покупка абонемента на определённое количество часов на календарный месяц вперед.
-                            Абонемент можно приобрести с 1 по 5 число каждого месяца. Абонемент действует до конца календарного месяца.
-                            Неиспользованные часы обнуляются с 1-ого числа следующего месяца.
-                            При покупке абонемента предоставляется скидка, размер скидки зависит от количества покупаемых часов.
-                            Бронирование времени происходит на общих условиях, полными часами.
+                            Исключением является покупка сертификата.
+                            Сертификат можно приобрести в любой момент времени на 30 дней
+                            (за исключением специальных акций). При покупке сертификата предоставляется
+                            скидка, размер скидки зависит от номинала сертификата и способа оплаты.
+                            Бронирование времени происходит на общих условиях.
                         </li>
                     </ul>
                 </div>
@@ -113,12 +116,12 @@
                             PIANOROOMS — сеть репетиториев в центре Москвы. Классы с акустической отделкой и камерные
                             залы для репетиций и концертов, акустические пианино и рояли. У нас Вы сможете воспользоваться
                             услугами концертмейстеров. 2 Репетитория работают круглосуточно! В наших образовательных проектах
-                            <a href='http://www.pianoroomshobby.ru/'' target='_blank'>Hobby и Professional</a> Вы сможете взять уроки вокала, игры на фортепиано, гитаре и
+                            <a href='http://www.pianoroomshobby.ru/' target='_blank'>Hobby и Professional</a> Вы сможете взять уроки вокала, игры на фортепиано, гитаре и
                             других музыкальных инструментах.
                         </p>
                     </div>
                     <div class='footer-block'>
-                        <h4>Contact information</h4>
+                        <h4>Контактные данные</h4>
                         <ul class='footer-links'>
                             <li>ООО 'АКЕС'<br>
                                 ОГРН 1177746644569<br>
@@ -129,8 +132,8 @@
                                 Москва, Брюсов пер. 8-10, стр.1
                             </li>
                             <li><a href="tel:+7-999-975-4529">+7 (999) 975-45-29</a></li>
-                            <li>Общение: <a href='#'>piano-email@gmail.com</a></li>
-                            <li>Вакансии: <a href='#'>hr@pianorooms.ru</a></li>
+                            <li>Общение: <a href='#'>moscow@pianorooms.ru</a></li>
+                            <li>Работа: <a href='#'>hr@pianorooms.ru</a></li>
                         </ul>
                     </div>
                     <div  class='footer-block'>
@@ -162,7 +165,7 @@
         </div>
         <script type="text/javascript" src='script/main.js'></script>
         <!-- YCLIENTS -->
-        <script type="text/javascript" src='yclientsCustom/yclientsCustomNavOnly.js'></script>
+        <script type="text/javascript" src='yclientsCustom/yclientsCustom.js'></script>
         <!-- FOUC FIX  -->
         <link rel='stylesheet' href='css/fouc.css'>
     </body>

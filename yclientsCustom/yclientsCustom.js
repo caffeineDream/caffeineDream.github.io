@@ -12,7 +12,7 @@ function defineBookingButton() {
         navList.appendChild(yclientsButton);
     } else {
         let targetContainer = document.getElementById('mobile-yclients-target');
-        let yclientsButton = document.createElement('button');
+        let yclientsButton = document.createElement('a');
         yclientsButton.classList.add('mobile-yclients', 'ms_booking');
         yclientsButton.textContent += 'Онлайн-запись';
         targetContainer.insertBefore(yclientsButton, targetContainer.firstChild);

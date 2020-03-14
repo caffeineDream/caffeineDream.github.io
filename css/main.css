@@ -105,7 +105,7 @@ a:hover, a:active, a:focus {
 .main-nav #main-logo a:hover {
   color: #000;
 }
-.main-nav .nav-phone {
+.main-nav .mobile-booking {
   display: none;
   color: #000;
   font-family: "Source Sans Pro", sans-serif;
@@ -113,7 +113,7 @@ a:hover, a:active, a:focus {
   font-weight: 400;
   margin: 0 0 0 0;
 }
-.nav-phone-holder {
+.nav-spaceholder {
   min-width: 10%;
   height: auto;
   margin: 0;
@@ -123,7 +123,7 @@ a:hover, a:active, a:focus {
   padding: 0;
 }
 @media screen and (max-width: 768px) {
-  .main-nav .nav-phone {
+  .main-nav .mobile-booking {
     display: block;
   }
 }
@@ -496,7 +496,7 @@ content: "";
     text-decoration: none;
     background: white;
     color: gray;
-    font-family: sans-serif;
+    font-family: "Open+Sans", sans-serif;
     font-size: 1rem;
     cursor: pointer;
     text-align: center;
