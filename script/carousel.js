@@ -43,7 +43,6 @@ const onGalleryBtnClick = (e) => {
     const currentButtonText = currentButton.innerText;
       // If button text contains spaces, swap then to hypen to use as id
     const currentCardId = currentButtonText.includes(' ') ? currentButtonText.replace(' ', '-')  : currentButtonText;
-    console.log(currentCardId)
     const currentCard = currentContentWrapper.querySelector('div#q' + currentCardId);
     currentCard.classList.remove('display-none');
     currentCard.classList.add('display-flex');
