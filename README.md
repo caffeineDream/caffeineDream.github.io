@@ -1,4 +1,2 @@
-Hello, i'm pianorooms template
-
-test
+Hello, i'm pianorooms template.
 
