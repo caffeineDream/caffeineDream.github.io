@@ -63,10 +63,10 @@
         <div class='container-wrap'>
             <div class='content-table'>
                 <h2 class="mobile-page-header">Цены</h2>
-                <button class='tab-button button-active' value='brusovContent' disabled>Брюсов I<br><small>Откроется 14 июня (капремонт дома)</small></button>
-                <button class='tab-button' value='brusovTwoContent'>Брюсов II<br><small>08.00-23.00</small></button>
-                <button class='tab-button' value='povarContent'>Поварская<br><small>Круглосуточно</small></button>
-                <button class='tab-button' value='soundspaceContent'>Садовая-Кудринская<br><small>10.00-22.00</small></button>
+                <button id='brusovContent' class='tab-button current-button' disabled onclick="onTableBtnClick(event)">Брюсов I<br><small>Откроется 14 июня (капремонт дома)</small></button>
+                <button id='brusov2Content' class='tab-button' onclick="onTableBtnClick(event)">Брюсов II<br><small>08.00-23.00</small></button>
+                <button id='povarContent' class='tab-button' onclick="onTableBtnClick(event)">Поварская<br><small>Круглосуточно</small></button>
+                <button id='soundspaceContent' class='tab-button' onclick="onTableBtnClick(event)">Садовая-Кудринская<br><small>10.00-22.00</small></button>
                 <table id='brusovContent' class='table-prices table-main'>
                     <thead>
                         <tr>
@@ -381,7 +381,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <table id='brusovTwoContent' class='table-prices table-main display-none'>
+                <table id='brusov2Content' class='table-prices table-main display-none'>
                     <thead>
                         <tr>
                             <th rowspan='2'>Номер<br>класса</th>
@@ -1695,7 +1695,8 @@
                 </div>
             </footer>
         </div>
-        <script type="text/javascript" src='../script/main.js'></script>
+        <script type="text/javascript" src='../script/navbar.js'></script>
+        <script type="text/javascript" src='../script/pricesTabs.js'></script>
         <!-- YCLIENTS -->
         <script type="text/javascript" src='../yclientsCustom/yclientsCustom.js'></script>
         <!-- FOUC FIX  -->
